@@ -7,7 +7,9 @@
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="18" />
-
+	
+	<uses-permission android:name="android.permission.INTERNET" /> 
+	
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -22,6 +24,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity 
+            android:name="com.example.loginrequest.ResultActivity"
+            android:label="ResultActivity"
+            android:parentActivityName="com.example.loginrequest.MainActivity" >
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.loginrequest.MainActivity" />
+            </activity>
     </application>
 
 </manifest>
